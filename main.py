@@ -8,11 +8,12 @@ menu="""
 1 - Boardgame toevoegen
 2 - Spelletjes opnieuw ophalen
 3 - Admin wachtwoord veranderen
-4 - Script stoppen
+4 - Overzicht spelletjes
+5 - Script stoppen
 """
 
 if login_check:
-    while my_keuze !="4":
+    while my_keuze !="5":
         print(menu)
         my_keuze=input("Geef je keuze ")
         if my_keuze=="1":
@@ -23,6 +24,9 @@ if login_check:
 
         elif my_keuze=="3":
             keuzes.drie()
+
+        elif my_keuze=="4":
+            keuzes.vier(my_boardgames)
 
 else:
     print("te veel pogingen, het programma sluit af")
