@@ -81,6 +81,13 @@ def drie():
     my_file.write(nieuw_ww)
     my_file.close()
 
+# Spelletjes overzicht
+
+def vier(spelletjes):
+    for spel in spelletjes:
+        print(f"naam:{spel["naam"]} genre:{spel["genre"]} uitgever:{spel["uitgever"]} spelers:{spel["spelers"]}")
+
+
 
 
 
